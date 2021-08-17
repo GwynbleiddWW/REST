@@ -1,1 +1,1 @@
-GET localhost:8080/authorize?user=Костя&password=qwerty123456
+GET localhost:8081/authorize?user=Костя&password=qwerty123456
