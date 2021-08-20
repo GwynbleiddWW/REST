@@ -1,10 +1,12 @@
 package ru.netology.rest.repo;
 
+import org.springframework.stereotype.Repository;
 import ru.netology.rest.authorities.Authorities;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class UserRepository {
     private Authorities authorities;
 
