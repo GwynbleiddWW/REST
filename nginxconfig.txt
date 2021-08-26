@@ -1,0 +1,12 @@
+server {
+     listen       8081;
+     server_name localhost;
+
+
+     location /signin {
+     root C:\Users\Konstantin\IdeaProjects\REST\src\main\java\ru\netology\web\;
+     }
+
+     location / {
+        proxy_pass http://localhost:8080
+     }
