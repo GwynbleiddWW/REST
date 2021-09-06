@@ -1,11 +1,14 @@
 server {
+     listen 80;
      server_name localhost;
 
-
      location /signin {
-     root C:\Users\Konstantin\IdeaProjects\REST\src\main\java\ru\netology\web\;
+     root /Users/Konstantin/IdeaProjects/REST/src/main/resources;
+     index signIn.html;
      }
 
      location / {
-        proxy_pass http://localhost:8080
+        proxy_pass http://localhost:8081
+        # порт моего приложения
      }
+}
